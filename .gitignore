@@ -1,5 +1,5 @@
 wandb/
-llama-3-8b-CC/
 .vscode/
-datasets-token/
-quantized_model/
+dataset/
+models/
+api-keys.txt
