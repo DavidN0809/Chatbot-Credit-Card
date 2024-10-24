@@ -8,7 +8,9 @@ papermill Pre-processing-Copy2.ipynb two-pre-output.ipynb
 Ctrl + b, then d
 ```
 ## Process original dataset
+```bash
 papermill Pre-processing.ipynb pre-output.ipynb
+```
 
 ## Using tmux and papermill to finetune llama
 ```bash
