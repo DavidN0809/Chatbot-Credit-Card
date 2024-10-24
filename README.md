@@ -1,4 +1,7 @@
 # Chatbot-Credit-Card
+The goal of this project augment a credit card approval dataset from [kaggle](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction) with reasoning for the approval or decline. The next goal take that new dataset and finetune llama3 on it to provide the approval/decline and the reason. The final goal is to build an front end webui/cli to prompt this model with an API.
+
+## Needed Commands
 ## Using tmux and papermill to process new dataset
 ```bash
 conda activate CC-Chatbot
