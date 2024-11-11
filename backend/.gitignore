@@ -1,6 +1,8 @@
 wandb/
 .vscode/
-dataset/
+#dataset/
+dataset/Cleaned-CC-Data  
+dataset/UCI
 models/
 api-keys.txt
 .ipynb_checkpoints
