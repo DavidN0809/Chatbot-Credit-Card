@@ -6,7 +6,6 @@ conda activate CC-Chatbot
 tmux new -s papermill_session-pre
 conda activate CC-Chatbot
 papermill /opt/notebooks/Chatbot-Credit-Card/backend/notebooks/Pre-processing-Dataset1.ipynb /opt/notebooks/Chatbot-Credit-Card/backend/notebooks/outputs/Pre-processing-Dataset1.ipynb
-Ctrl + b, then d
 ```
 
 ### Using tmux and papermill to finetune llama
@@ -20,7 +19,6 @@ papermill /opt/notebooks/Chatbot-Credit-Card/backend/notebooks/llama.ipynb /opt/
 ### Attach back later
 ```bash
 tmux attach -t papermill_session-pre
-exit
 ```
 
 ### force kill
