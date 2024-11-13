@@ -9,17 +9,22 @@ app = FastAPI()
 
 # Load your fine-tuned model once when the server starts
 MODEL_PATH = "./model/llama3.pt"  # Adjust path as needed
-model = torch.load(MODEL_PATH)     # Adjust loading method as per model requirements
+tokenizer = AutoTokenizer.from_pretrained(model_path)
+model = AutoModelForCausalLM.from_pretrained(model_path)
 
-# Define input format
-class Prompt(BaseModel):
-    text: str
+class PromptRequest(BaseModel):
+    prompt: str
+    max_length: int = 100
+    temperature: float = 0.7
 
-# Endpoint to generate responses
-@app.post("/generate")
-async def generate(prompt: Prompt):
-    # Generate a response using your model
-    response = model.generate(prompt.text)  # Adjust as per your model's generation method
-    return {"response": response}
-
-# Run using: uvicorn main:app --reload
+@app.post("/generate/")
+async def generate_text(request: PromptRequest):
+    inputs = tokenizer.encode(request.prompt, return_tensors="pt")
+    outputs = model.generate(
+        inputs,
+        max_length=request.max_length,
+        temperature=request.temperature,
+        pad_token_id=tokenizer.eos_token_id
+    )
+    result = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    return {"response": result}

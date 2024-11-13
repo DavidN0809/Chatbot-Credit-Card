@@ -1,0 +1,16 @@
+services:
+  backend:
+    build:
+      context: .
+      target: backend
+    volumes:
+      - ./backend/models:/app/models  # Mount model files for persistence
+    depends_on:
+      - frontend
+
+  frontend:
+    build:
+      context: .
+      target: frontend
+    ports:
+      - "79:80"
