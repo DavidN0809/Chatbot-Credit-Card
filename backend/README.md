@@ -16,9 +16,14 @@ conda activate CC-Chatbot
 papermill /opt/notebooks/Chatbot-Credit-Card/backend/notebooks/llama.ipynb /opt/notebooks/Chatbot-Credit-Card/backend/notebooks/outputs/llama-output.ipynb
 ```
 
+## Activate Backend
+```bash
+conda activate CC-Chatbot
+uvicorn backend.main:app --reload
+```
 ### Attach back later
 ```bash
-tmux attach -t papermill_session-pre
+tmux attach -t papermill_session-llama
 ```
 
 ### force kill
