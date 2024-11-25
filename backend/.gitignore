@@ -3,6 +3,6 @@ wandb/
 #dataset/
 dataset/Cleaned-CC-Data  
 dataset/UCI
-#models/
+models/llama*
 api-keys.txt
 .ipynb_checkpoints

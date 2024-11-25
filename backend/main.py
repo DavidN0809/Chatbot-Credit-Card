@@ -32,6 +32,8 @@ bnb_config = BitsAndBytesConfig(
 # Load the tokenizer from the trained model path
 tokenizer = AutoTokenizer.from_pretrained(TRAINED_MODEL_PATH, trust_remote_code=True)
 
+from fastapi.staticfiles import StaticFiles
+
 # Load the base model with quantization
 print("Loading the base model...")
 base_model = AutoModelForCausalLM.from_pretrained(
