@@ -3,8 +3,10 @@ services:
     build:
       context: .
       target: backend
-    volumes:
-      - ./backend/models:/app/models  # Mount model files for persistence
+  #  volumes:
+  #    - ./backend/models:/app/models  # Mount model files for persistence
+    ports:
+      - "8000:8000"  # Expose backend port to host
     depends_on:
       - frontend
 

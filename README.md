@@ -5,5 +5,11 @@ There is three major goals for this project and one goal if time permits.
 3. Build an front end webui to prompt this finetuned model, that includes an API.
 4. If time permits another goal is to containizer the front end and push the custom model to huggingface.
 
+## How to use
+1. git clone https://github.com/DavidN0809/Chatbot-Credit-Card.git
+2. cd Chatbot-Credit-Card
+3. docker compose build
+4. docker compose up
+
 ### Git repo layout
 Currently there is no front end, there is a notebooks directory containing the notebooks for finetuning and preprocessing. There is two env.yml files, one for running in a windows conda environment and the linux-env.yml for running in a linux environment.
