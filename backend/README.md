@@ -13,7 +13,7 @@ papermill /opt/notebooks/Chatbot-Credit-Card/backend/notebooks/Pre-processing-Da
 conda activate CC-Chatbot
 tmux new -s papermill_session-llama
 conda activate CC-Chatbot
-papermill /opt/notebooks/Chatbot-Credit-Card/backend/notebooks/llama.ipynb /opt/notebooks/Chatbot-Credit-Card/backend/notebooks/outputs/llama-output.ipynb
+papermill /opt/notebooks/Chatbot-Credit-Card/backend/notebooks/llama-Copy3.ipynb /opt/notebooks/Chatbot-Credit-Card/backend/notebooks/outputs/llama-output.ipynb
 ```
 
 ## Activate Backend
