@@ -6,7 +6,7 @@ There is three major goals for this project and one goal if time permits.
 4. If time permits another goal is to containizer the front end and push the custom model to huggingface.
 
 ## Demo Video
-Youtube video [youtube]([youtube-link](https://youtu.be/oaLKMirVSbk))
+[![Watch the video](https://img.youtube.com/vi/oaLKMirVSbk/maxresdefault.jpg)](https://youtu.be/oaLKMirVSbk)
 
 ## How to use
 ### 1. Clone the Repository
