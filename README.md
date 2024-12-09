@@ -5,6 +5,9 @@ There is three major goals for this project and one goal if time permits.
 3. Build an front end webui to prompt this finetuned model, that includes an API.
 4. If time permits another goal is to containizer the front end and push the custom model to huggingface.
 
+## Demo Video
+Youtube video [youtube]([youtube-link](https://youtu.be/oaLKMirVSbk))
+
 ## How to use
 ### 1. Clone the Repository
 ```bash
